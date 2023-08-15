@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Captioning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 class="task-title">Task Instructions:</h1>
+    <h2 class="task-descrption">Correct or accept the AI-generated 
+        caption for the given image. Make sure that the caption 
+        is specific and describes the human action.</h2>
+    <!-- Image Container -->
+    <div class="image-container" id="image-container">
+        <img src="image_folder/Image_1.png" id="img" alt="Image 1">
+    </div>
+    <div class="ai-text">
+        <p class="descrip">AI-generated Original Text (make edits here): </p>
+        <p class="text" id='edit-text' contenteditable="true">a group of horses standing around a fire</p>
+    </div>
+    <div class="edit-text">
+        <p class="descrip">Final Caption: </p>
+        <p class="text" id="mod-text">a group of horses standing around a fire</p>
+    </div>
+    <div class="buttons" id="buttons">
+        <button class="btn" id="back">Back</button>
+        <button class="btn" id="next">Next</button>
+    </div>
+
+    <!-- Script  -->
+    <script src="script.js"></script>
+  </body>
+</html>
